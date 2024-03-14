@@ -5,29 +5,21 @@
     scroll-behavior: smooth;
 }
 
-/* body{
-    width:1600px;
-    height: 1422px;
-} */
 body {
     background-color: rgb(255, 250, 245);
 }
 
-/* .obsi {
-    margin-left: 40px;
-} */
-
-.lib-img {
-    margin-left: 215px;
-    margin-top: 36px;
+.books1-img {
     cursor: pointer;
 }
 
 .navbar {
     display: flex;
+    margin-left: 215px;
+    margin-top: 36px;
 }
 
-ul {
+.navbar-list {
     list-style: none;
     display: flex;
     column-gap: 21px;
@@ -48,6 +40,9 @@ ul li a:hover {
     color: black;
 }
 
+.list {
+    margin-bottom: 51px;
+}
 
 .nav-active {
     color: rgb(225, 106, 0);
@@ -187,6 +182,7 @@ ul li a:hover {
     margin-top: 47px;
     font-family: "Montserrat";
     margin-left: 150px;
+    list-style: none;
 }
 
 hr {
@@ -198,17 +194,17 @@ hr {
     font-size: 13px;
     font-weight: 900;
     font-family: "Montserrat";
-    /* margin-left: 250px; */
     margin-top: 90px;
 }
-.contact-footer{
+
+.contact-footer {
     display: flex;
     flex-direction: column;
     margin-left: 250px;
     row-gap: 30px;
 }
 
-.request{
+.request {
     color: rgb(225, 106, 0);
     font-size: 15px;
     font-weight: 500px;
