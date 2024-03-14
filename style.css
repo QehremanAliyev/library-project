@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* body{
+    width:1600px;
+    height: 1422px;
+} */
+body {
+    background-color: rgb(255, 250, 245);
+}
+
+/* .obsi {
+    margin-left: 40px;
+} */
+
+.lib-img {
+    margin-left: 215px;
+    margin-top: 36px;
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    column-gap: 21px;
+    margin-top: 42px;
+    margin-left: 300px;
+    font-size: 17px;
+    font-weight: 400px;
+    font-family: "Montserrat";
+    cursor: pointer;
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgb(36, 20, 0);
+}
+
+ul li a:hover {
+    color: black;
+}
+
+
+.nav-active {
+    color: rgb(225, 106, 0);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.nav-active:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.div-join {
+    margin-top: 42px;
+    margin-left: 371px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+#join-btn {
+    border: none;
+    background-color: rgb(255, 250, 245);
+    cursor: pointer;
+    color: rgb(36, 20, 0);
+    font-size: 17px;
+    font-family: "Roboto";
+}
+
+.h1-contact {
+    margin-top: 121px;
+    font-family: "Montserrat";
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    margin-left: 215px;
+}
+
+.form {
+    margin-top: 36px;
+}
+
+#name-contact,
+#email-contact,
+#address-contact,
+#phone-contact {
+    width: 610px;
+    height: 75px;
+    font-size: 23px;
+    padding-left: 38px;
+    margin-top: 30px;
+    margin-right: 20px;
+    font-family: "Crimson-text";
+    font-weight: 400;
+    border: 1px solid rgb(179, 161, 144);
+}
+
+#note-contact {
+    width: 1246px;
+    height: 153px;
+    font-size: 23px;
+    padding-left: 38px;
+    margin-top: 30px;
+    margin-right: 20px;
+    font-family: "Crimson-text";
+    font-weight: 400;
+    border: 1px solid rgb(179, 161, 144);
+}
+
+
+
+#name-contact:focus,
+#email-contact:focus,
+#address-contact:focus,
+#phone-contact:focus,
+#note-contact:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(62, 115, 230, 0.918);
+}
+
+.send-btn {
+    width: 610px;
+    height: 75px;
+    font-family: "Crimson-text";
+    font-size: 30px;
+    background-color: rgb(230, 130, 37);
+    color: white;
+    border: 0;
+    margin-left: 325px;
+    margin-top: 60px;
+}
+
+.send-btn:hover {
+    background-color: rgb(236, 117, 5);
+    cursor: pointer;
+}
+
+.footer {
+    margin-top: 120px;
+    margin-left: 600px;
+}
+
+.footer p {
+    font-weight: 900;
+    font-size: 25px;
+    font-family: "Montserrat";
+    margin-bottom: 30px;
+    margin-left: 55px;
+}
+
+.icons img {
+    margin-left: 55px;
+}
+
+.last-part-footer {
+    background-color: rgb(57, 31, 0);
+    width: 100%;
+    height: 100%;
+    margin-top: 56px;
+    display: flex;
+}
+
+.books2-img {
+    margin-left: 214px;
+    margin-top: 100px;
+    margin-bottom: 143px;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    color: azure;
+    margin-top: 47px;
+    font-family: "Montserrat";
+    margin-left: 150px;
+}
+
+hr {
+    border-color: rgb(53, 30, 3);
+}
+
+.phone-number {
+    color: white;
+    font-size: 13px;
+    font-weight: 900;
+    font-family: "Montserrat";
+    /* margin-left: 250px; */
+    margin-top: 90px;
+}
+.contact-footer{
+    display: flex;
+    flex-direction: column;
+    margin-left: 250px;
+    row-gap: 30px;
+}
+
+.request{
+    color: rgb(225, 106, 0);
+    font-size: 15px;
+    font-weight: 500px;
+    font-family: "Montserrat";
+}
