@@ -166,6 +166,7 @@ ul li a:hover {
     height: 100%;
     margin-top: 56px;
     display: flex;
+    flex-direction: column;
 }
 
 .books2-img {
@@ -209,4 +210,21 @@ hr {
     font-size: 15px;
     font-weight: 500px;
     font-family: "Montserrat";
+}
+.footer-ul{
+    display: flex;
+}
+
+.first-part{
+    display: flex;
+}
+
+.all-rights{
+    font-size: 15px;
+    font-family:"Montserrat";
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    margin-top: 76px;
+    margin-bottom: 20px;
 }
