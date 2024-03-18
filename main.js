@@ -1,4 +1,45 @@
-// var a = document.querySelector("#name-contact");
-// a.addEventListener("click", function() {
-//     a.style.borderColor = "blue";
-// });
+const nameContact = document.querySelector("#name-contact");
+const emailContact = document.querySelector("#email-contact");
+const addressContact = document.querySelector("#address-contact");
+const phoneContact = document.querySelector("#phone-contact");
+const noteContact = document.querySelector("#note-contact");
+const sendButton = document.querySelector(".send-btn");
+const errorAlert = document.querySelector(".error-alert");
+const successALert = document.querySelector(".success-alert");
+const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+sendButton.addEventListener("click", function () {
+    if (
+        nameContact.value.trim() === "" ||
+        emailContact.value.trim() === "" ||
+        addressContact.value.trim() === "" ||
+        phoneContact.value.trim() === "" ||
+        noteContact.value.trim() === "" ||
+        !emailPattern.test(emailContact.value)
+      ) {
+        errorAlert.style.display = "block";
+        setTimeout(() => {
+            errorAlert.style.display = "none";
+        }, 3500);
+        return;
+      }
+    
+      const information = {
+        contactName: nameContact.value,
+        contactEmail: emailContact.value,
+        contactAdress: addressContact.value,
+        contactPhone: phoneContact.value,
+        contactTextarea: noteContact.value,
+      };
+    
+      successALert.style.display = "block";
+    
+      setTimeout(() => {
+        successALert.style.display = "none";
+        nameContact.value = "";
+        emailContact.value = "";
+        phoneContact.value = "";
+        noteContact.value = "";
+        noteContact.value = "";
+      }, 3500);
+    });
