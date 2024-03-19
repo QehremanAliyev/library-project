@@ -10,12 +10,12 @@ const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 sendButton.addEventListener("click", function () {
     if (
-        nameContact.value.trim() === "" ||
-        emailContact.value.trim() === "" ||
-        addressContact.value.trim() === "" ||
-        phoneContact.value.trim() === "" ||
-        noteContact.value.trim() === "" ||
-        !emailPattern.test(emailContact.value)
+      !nameContact.value.trim() ||
+      !emailContact.value.trim() ||
+      !addressContact.value.trim() ||
+      !phoneContact.value.trim() ||
+      !noteContact.value.trim() ||
+      !emailPattern.test(emailContact.value)
       ) {
         errorAlert.style.display = "block";
         setTimeout(() => {
@@ -29,7 +29,7 @@ sendButton.addEventListener("click", function () {
         contactEmail: emailContact.value,
         contactAdress: addressContact.value,
         contactPhone: phoneContact.value,
-        contactTextarea: noteContact.value,
+        contactNote: noteContact.value,
       };
     
       successALert.style.display = "block";
@@ -39,7 +39,16 @@ sendButton.addEventListener("click", function () {
         nameContact.value = "";
         emailContact.value = "";
         phoneContact.value = "";
-        noteContact.value = "";
+        addressContact.value = "";
         noteContact.value = "";
       }, 3500);
     });
+
+    document.querySelector("#phone-contact").addEventListener("change", function() {
+      let inputValue = parseInt(this.value);
+      
+      if (inputValue < 0) {
+          this.value = Math.abs(inputValue); 
+      }
+  });
+  
