@@ -2,8 +2,7 @@ const nameContact = document.querySelector("#name-contact");
 const emailContact = document.querySelector("#email-contact");
 const addressContact = document.querySelector("#address-contact");
 const phoneContact = document.querySelector("#phone-contact");
-const noteContact = document.querySelector("#note-contact");
-const sendButton = document.querySelector(".send-btn");
+const sendButton = document.querySelector(".Send-button");
 const errorAlert = document.querySelector(".error-alert");
 const successALert = document.querySelector(".success-alert");
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -14,7 +13,6 @@ sendButton.addEventListener("click", function () {
       !emailContact.value.trim() ||
       !addressContact.value.trim() ||
       !phoneContact.value.trim() ||
-      !noteContact.value.trim() ||
       !emailPattern.test(emailContact.value)
       ) {
         errorAlert.style.display = "block";
@@ -29,7 +27,6 @@ sendButton.addEventListener("click", function () {
         contactEmail: emailContact.value,
         contactAdress: addressContact.value,
         contactPhone: phoneContact.value,
-        contactNote: noteContact.value,
       };
     
       successALert.style.display = "block";
@@ -40,7 +37,6 @@ sendButton.addEventListener("click", function () {
         emailContact.value = "";
         phoneContact.value = "";
         addressContact.value = "";
-        noteContact.value = "";
       }, 3500);
     });
 

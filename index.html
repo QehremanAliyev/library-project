@@ -27,261 +27,167 @@
         rel="stylesheet">
     <link rel="icon" href="./images/logo_red.svg" />
     <link rel="stylesheet" href="./style.css">
+
     <script src="./main.js" defer></script>
+
+    
 </head>
 
 <body>
-    <!-- <div class="obsi">
-        <header class="navbar">
-            <img src="./images/logo-color.svg" class="books1-img">
-            <div class="list">
-                <ul class="navbar-list">
-                    <li class="nav-item ">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Catalog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About Store</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-active" href="#">Contact Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Search</a>
-                    </li>
+
+    <header class="header container-fluid">
+        <nav class="navbar  navbar-expand-lg  main-menu ">
+            <div class="container-fluid ">
+                <a class="navbar-brand" href="#">
+                    <img src="./images/Booklogo.svg" />
+                </a>
+
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class=" header-list navbar-nav w-100 justify-content-center mb-2 mb-lg-0 ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./catalog.html">Catalog</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="./about.html" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                About Store
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html" aria-disabled="true">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./search.html" aria-disabled="true">Search</a>
+                        </li>
+                    </ul>
+                    <div class="btn d-flex align-items-center" data-toggle="modal" data-target="#exampleModal">
+                        <a class="navbar-brand" href="#">
+                            <img src="./images/joinus.svg" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contact_us">
+        <div class="contact-container mx-auto p-0">
+            <div class="p-contact-us">
+                <p>Contact Us</p>
+            </div>
+            <form class="form">
+                <div class="first-form">
+                    <input type="text" id="name-contact" placeholder="Full Name" />
+                    <input type="email" id="email-contact" placeholder="Email" />
+                </div>
+
+                <div class="second-form">
+                    <input type="text" id="address-contact" placeholder="Address" />
+                    <input type="number" id="phone-contact" placeholder="Phone" />
+                </div>
+
+                <div class="third-form">
+                    <form class="information">
+                        <div class="error-alert">
+                            <h4 class="error-heading">Error</h4>
+                            <p class="error-p">Please check all informations</p>
+                        </div>
+                        <div class="success-alert">
+                            <h4 class="success-heading">Successful</h4>
+                            <p class="success-p">Sended your information!</p>
+                        </div>
+                    </form>
+                </div>
+            </form>
+
+            <div class="button-div">
+                <button class="Send-button">Send</button>
+            </div>
+        </div>
+    </main>
+
+    <section class="social-media-section">
+        <p>Follow us on social media</p>
+        <div class="social-container">
+            <img src="./images/facebook.svg" />
+            <img src="./images/twitter.svg" />
+            <img src="./images/instagram.svg" />
+        </div>
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="information-section">
+            <div>
+                <img src="./images/Лого (1).svg" />
+            </div>
+
+            <div class="inform">
+                <ul>
+                    <li>Popular</li>
+                    <li>Programming</li>
+                    <li>Books for children</li>
+                    <li>Psychology</li>
+                    <li>Business</li>
+
                 </ul>
             </div>
+            <div class="inform">
+                <ul>
+                    <li>Information</li>
+                    <li>Delivery</li>
+                    <li>Payment</li>
+                    <li>About the store</li>
 
-            <div class="div-join">
-                <div class="join-img">
-                    <img id="joinUs" src="./images/join-us-icon.svg" alt="img-icon" />
-                </div>
-                <div class="join-button">
-                    <button id="join-btn">Join Us</button>
-                </div>
+                </ul>
             </div>
-        </header> -->
-        <header class="header container-fluid">
-            <nav class="navbar  navbar-expand-lg  main-menu ">
-                <div class="container-fluid ">
-                    <a class="navbar-brand" href="#">
-                        <img src="./images/Booklogo.svg" />
-                    </a>
-    
-                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-    
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class=" header-list navbar-nav w-100 justify-content-center mb-2 mb-lg-0 ms-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="./index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./catalog.html">Catalog</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link" href="./about.html" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    About Store
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./contact.html" aria-disabled="true">Contact Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./search.html" aria-disabled="true">Search</a>
-                            </li>
-                        </ul>
-                        <div class="btn d-flex align-items-center" data-toggle="modal" data-target="#exampleModal">
-                            <a class="navbar-brand" href="#">
-                                <img src="./images/joinus.svg" />
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </header>
+            <div class="inform">
+                <ul>
+                    <li>Help</li>
+                    <li>Contacts</li>
+                    <li>Purchase returns</li>
+                    <li>Buyer help</li>
 
-        <main class="contact">
-            <h1 class="h1-contact">Contact Us</h1>
-            <form class="form">
-                <form class="form-1">
-                    <input type="text" placeholder="Full Name" id="name-contact">
-                    <input type="email" placeholder="Email" id="email-contact">
-                </form>
-                <form class="form-2">
-                    <input type="text" placeholder="Address" id="address-contact">
-                    <input type="number" placeholder="Phone" id="phone-contact">
-                    <div id="phone-error" style="color: red; display: none;">Please enter a valid phone number.</div>
-                </form>
-                <form class="form-3">
-                    <input type="text" placeholder="Note" id="note-contact">
-                </form>
-                <form class="information">
-                    <div class="error-alert">
-                        <h4 class="error-heading">Error</h4>
-                        <p class="error-p">Please check all informations</p>
-                    </div>
-                    <div class="success-alert">
-                        <h4 class="success-heading">Successful</h4>
-                        <p class="success-p">Sended your information!</p>
-                    </div>
-                </form>
-            </form>
-            <div> <button class="send-btn">Send</button></div>
-        </main>
-
-
-        <section class="section1">
-        <h1 class="socialMedia">Follow us on social media</h1>
-        <div class="socialMediaPage">
-            <div class="facebook">
-                <img src="./images/Vector (1).svg">
+                </ul>
             </div>
-            <div class="twitter">
-                <img src="./images/Vector (2).svg">
-            </div>
-            <div class="instagram">
-                <img src="./images/Vector (3).svg">
+            <div class="inform inf-4">
+                <ul>
+                    <li>+38 (071) 339-16-26</li>
+                    <li>Request a call</li>
+                </ul>
             </div>
         </div>
 
-    </section>
+        <div class="ending">
+            <p>All rights reserved © 2003-2021 LIBRARY TERMS OF USE | Privacy Policy</p>
+        </div>
 
-        <!-- <div class="social-media">
-            <section class="footer-icons">
-                <p>Follow us on social media</p>
-                <div class="icons">
-                    <img src="./images/facebook.svg" alt="facebook-icon" />
-                    <img src="./images/twitter.svg" alt="twitter-icon" />
-                    <img src="./images/instagram.svg" alt="instagram-icon" />
-                </div>
-            </section>
-
-        </div> -->
-        <!-- <section class="last-part-footer">
-            <div class="first-part">
-                <div class="footer-image">
-                    <img src="./images/logo-group.svg" class="books2-img">
-                </div>
-                <div class="footer-ul">
-                    <ul class="footer-list">
-                        <li>Popular</li>
-                        <hr>
-                        <li>Programming</li>
-                        <hr>
-                        <li>Books for children</li>
-                        <hr>
-                        <li>Psychology</li>
-                        <hr>
-                        <li>Business</li>
-                        <hr>
-                    </ul>
-                    <ul class="footer-list">
-                        <li>Information</li>
-                        <hr>
-                        <li>Delivery</li>
-                        <hr>
-                        <li>Payment</li>
-                        <hr>
-                        <li>About the store</li>
-                        <hr>
-                    </ul>
-                    <ul class="footer-list">
-                        <li>Help</li>
-                        <hr>
-                        <li>Contacts</li>
-                        <hr>
-                        <li>Purchase returns</li>
-                        <hr>
-                        <li>Buyer help</li>
-                        <hr>
-                    </ul>
-                </div>
-
-                <div class="contact-footer">
-                    <div>
-                        <p class="phone-number">+38 (071) 339-16-26</p>
-                    </div>
-                    <div>
-                        <p class="request">Request a call</p>
-                    </div>
-                </div>
-            </div>
-            <div class="second-part">
-                <p class="all-rights">
-                    All rights reserved © 2003-2021 LIBRARY TERMS OF USE | Privacy Policy
-                </p>
-            </div>
-
-        </section> -->
-
-
-        <footer class="footer">
-            <div class="information-section">
-                <div>
-                    <img src="./assets/images/Лого.svg" />
-                </div>
-    
-                <div class="inform">
-                    <ul>
-                        <li>Popular</li>
-                        <li>Programming</li>
-                        <li>Books for children</li>
-                        <li>Psychology</li>
-                        <li>Business</li>
-    
-                    </ul>
-                </div>
-                <div class="inform">
-                    <ul>
-                        <li>Information</li>
-                        <li>Delivery</li>
-                        <li>Payment</li>
-                        <li>About the store</li>
-    
-                    </ul>
-                </div>
-                <div class="inform">
-                    <ul>
-                        <li>Help</li>
-                        <li>Contacts</li>
-                        <li>Purchase returns</li>
-                        <li>Buyer help</li>
-    
-                    </ul>
-                </div>
-                <div class="inform inf-4">
-                    <ul>
-                        <li>+38 (071) 339-16-26</li>
-                        <li>Request a call</li>
-                    </ul>
-                </div>
-            </div>
-    
-            <div class="ending">
-                <p>All rights reserved © 2003-2021 LIBRARY TERMS OF USE | Privacy Policy</p>
-            </div>
-    
-        </footer>
-        <footer class="responsive-footer">
-            <img src="./assets/images/Лого.svg" />
-            <ul>
-                <li>Home</li>
-                <li>Catalog</li>
-                <li>About</li>
-                <li>Contact Us</li>
-                <li>Search</li>
-            </ul>
-            <p class="responsive-paragraph">Library BookStore EACamp</p>
-            <p>© 2003-2021</p>
-        </footer>
+    </footer>
+    <footer class="responsive-footer">
+        <img src="./images/Лого (1).svg" />
+        <ul class="responsive-navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Catalog</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Search</a></li>
+        </ul>
+        <p class="responsive-paragraph">Library BookStore EACamp</p>
+        <p>© 2003-2021</p>
+    </footer>
     </div>
 </body>
 
 </html>
+
+
